@@ -4,6 +4,7 @@ import Genstures from './components/Genstures'
 import AnimationControls from './components/AnimationControls'
 import ViewBasedAnimations from './components/ViewBasedAnimations'
 import ScrollAnimations from './components/ScrollAnimations'
+import DragDrop from './components/DragDrop/DragDrop'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     {/* <Genstures /> */}
     {/* <AnimationControls /> */}
     {/* <ViewBasedAnimations /> */}
-    <ScrollAnimations />
+    {/* <ScrollAnimations /> */}
+    <DragDrop />
     </>
   )
 }

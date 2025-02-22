@@ -18,6 +18,7 @@ function Basics() {
       rotate:'180deg',
       scale:1,
       y:[0,150,-150,-150,0]
+      
 
       }}
      transition={{
