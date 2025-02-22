@@ -7,7 +7,7 @@ function AddCards({setCards,column}) {
     const data={
         column,
         title:text,
-        id:Math.random().toString()
+        id:Date.now()
         
     }
 
@@ -19,6 +19,7 @@ function AddCards({setCards,column}) {
         setCards((prev)=> [...prev,data])
         setText('')
         setActive(false)
+        console.log(data)
     }
   return (
     <div>{
