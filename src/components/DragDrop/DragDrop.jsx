@@ -1,5 +1,5 @@
 import React from 'react'
-import Board from './Borad'
+import Board from './Board'
 
 function DragDrop() {
   return (
