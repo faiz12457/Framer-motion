@@ -6,6 +6,7 @@ import ViewBasedAnimations from './components/Basics/ViewBasedAnimations'
 import ScrollAnimations from './components/Basics/ScrollAnimations'
 import DragDrop from './components/DragDrop/DragDrop'
 import RevealText from './components/textanimation/RevealText'
+import TextParallex from './components/AppleScrollAnimation/textParallex'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
     <ViewBasedAnimations /> 
     <ScrollAnimations /> */}
     {/* <DragDrop /> */}
-    <RevealText />
+    {/* <RevealText /> */}
+    <TextParallex />
     </>
   )
 }
