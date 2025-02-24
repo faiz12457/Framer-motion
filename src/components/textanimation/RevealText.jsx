@@ -5,11 +5,11 @@ function RevealText() {
   return (
     <div className='w-full min-h-screen bg-green-400 grid place-content-center text-black gap-2'>
         <FlipLink href='#'>Facebook</FlipLink>
-        {/* <FlipLink href='#'>Linkedin</FlipLink>
+        <FlipLink href='#'>Linkedin</FlipLink>
         <FlipLink href='#'>Instagram</FlipLink>
-        <FlipLink href='#'>Twitter</FlipLink> */}
+        <FlipLink href='#'>Twitter</FlipLink>
     </div>
-    
+
   )
 }
 
