@@ -8,6 +8,9 @@ import DragDrop from './components/DragDrop/DragDrop'
 import RevealText from './components/textanimation/RevealText'
 import TextParallex from './components/AppleScrollAnimation/textParallex'
 import Aurora from './components/AuroraEffect/Aurora'
+import NavSlide from './components/NavSlide/NavSlide'
+import ScrollParallex from './components/SmoothScrollParallex/ScrollParallex'
+import DropDown from './components/AnimatedDropdown/DropDown'
 
 function App() {
   return (
@@ -20,8 +23,12 @@ function App() {
     {/* <DragDrop /> */}
     {/* <RevealText /> */}
     {/* <TextParallex /> */}
-    <Aurora />
+    {/* <Aurora /> */}
+    {/* <NavSlide /> */}
+    {/* <ScrollParallex /> */}
+    <DropDown />
     </>
+
   )
 }
 
