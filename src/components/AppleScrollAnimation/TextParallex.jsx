@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { motion, useAnimationControls, useScroll, useTransform} from "framer-motion";
 
+
+const IMGPadding=12;
 function TextParallex() {
   return (
     <div className='bg-white'>
     
-    <TextContent imgUrl='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29sbGFib3JhdGV8ZW58MHx8MHx8fDA%3D'
+    <TextContent imgUrl='https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww'
      heading='Collaborate'
      subHeading='Bulit for all of us'
       ></TextContent>
@@ -31,9 +34,10 @@ export default TextParallex
 function TextContent({imgUrl ,heading,subHeading,children}){
     return(
         <>
-        <div>
-        <div>            
+        <div className='px-3'>
+        <div className='h-[150vh] relative'>            
             <StickyImg imgUrl={imgUrl}  />
+            <Overlay heading={heading} subHeading={subHeading} />
              </div>
             {children}
         </div>
@@ -44,15 +48,42 @@ function TextContent({imgUrl ,heading,subHeading,children}){
 
 
 function StickyImg({imgUrl}){
+    const targetRef=useRef(null)
+    const {scrollYProgress}=useScroll({
+        target:targetRef,
+        offset:["end end","end start"]
+    });
 
+    const scale=useTransform(scrollYProgress,[0,1],[1,0.85]);
+    
+    const opacity=useTransform(scrollYProgress,[0,1],[1,0])
     return (
-        <div style={{
-            
+        <motion.div ref={targetRef} style={{
             background:`url(${imgUrl})` ,
             backgroundSize:'cover',
             backgroundPosition:'center',
-        }}>
-            <div />
-        </div>
+            height:`calc(100vh - ${IMGPadding*2}px)`,
+            top:IMGPadding,
+            scale,
+           
+        }} className=' sticky z-0 rounded-3xl overflow-hidden'>
+        
+            <motion.div className='absolute inset-0 bg-neutral-950/70' style={{opacity}} />
+        </motion.div>
+    )
+}
+
+
+
+
+const Overlay=({heading,subHeading})=>{
+    return (
+        <>
+<motion.div className='absolute top-0 left-0 flex h-screen items-center justify-center flex-col text-white w-full'>
+<p className='  text-xl  '>{subHeading}</p>
+<p className='font-bold text-7xl'>{heading}</p>
+</motion.div>
+
+        </>
     )
 }
