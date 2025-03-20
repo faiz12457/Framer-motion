@@ -11,6 +11,9 @@ import Aurora from './components/AuroraEffect/Aurora'
 import NavSlide from './components/NavSlide/NavSlide'
 import ScrollParallex from './components/SmoothScrollParallex/ScrollParallex'
 import DropDown from './components/AnimatedDropdown/DropDown'
+import TiltCard from './components/TiltCardOnHover/TiltCard'
+import Nav, { Text } from './components/HideNavOnScroll/Nav'
+
 
 function App() {
   return (
@@ -24,9 +27,17 @@ function App() {
     {/* <RevealText /> */}
     {/* <TextParallex /> */}
     {/* <Aurora /> */}
-    {/* <NavSlide /> */}
+    <NavSlide />
     {/* <ScrollParallex /> */}
-    <DropDown />
+    {/* <DropDown /> */}
+    {/* <TiltCard /> */}
+    {/* <Nav /> */}
+    {/* {
+      Array.from({length:20}).map(()=>{
+        return <Text />
+      })
+    }
+    <Text /> */}
     </>
 
   )
