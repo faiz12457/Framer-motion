@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function Column({title,headingColor,column,cards,setCards}) {
     const [active,setActive]=useState(false);
-    const filterCards=cards.filter((c)=>{ return c.column===column})
+    const filterCards=cards.filter((c)=> c.column===column)
     
 
     function handleDragStart(e,card){

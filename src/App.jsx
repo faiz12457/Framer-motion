@@ -13,12 +13,16 @@ import ScrollParallex from './components/SmoothScrollParallex/ScrollParallex'
 import DropDown from './components/AnimatedDropdown/DropDown'
 import TiltCard from './components/TiltCardOnHover/TiltCard'
 import Nav, { Text } from './components/HideNavOnScroll/Nav'
+import Accordain from './components/AnimatedAccordain/Accordain'
+import ScrollSpy from './components/ScrollSpy/ScrollSpy'
+import Panigation from './components/panigation/Panigation'
 
 
 function App() {
   return (
     <>
-    {/* <Basics /> 
+    {/* <Basics />  */}
+    {/* 
      <Genstures /> 
      <AnimationControls /> 
     <ViewBasedAnimations /> 
@@ -27,7 +31,7 @@ function App() {
     {/* <RevealText /> */}
     {/* <TextParallex /> */}
     {/* <Aurora /> */}
-    <NavSlide />
+    {/* <NavSlide /> */}
     {/* <ScrollParallex /> */}
     {/* <DropDown /> */}
     {/* <TiltCard /> */}
@@ -37,7 +41,14 @@ function App() {
         return <Text />
       })
     }
+
+    
     <Text /> */}
+
+    {/* <Accordain /> */}
+    {/* <ScrollSpy /> */}
+
+    <Panigation />
     </>
 
   )

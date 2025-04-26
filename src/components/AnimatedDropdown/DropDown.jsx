@@ -44,7 +44,7 @@ function FlyoutLink({children,href,FlyoutContent}){
                 
                 style={{x:"-50%"}}
                  className="absolute top-12 left-1/2">
-                <div className="absolute -top-6 left-0 right-0 h-6 "></div>
+                <div className="absolute -top-6 left-0 right-0  h-6 "></div>
                 <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-white -top-2 rotate-45" ></div>
                 <FlyoutContent />
                 </motion.div>
