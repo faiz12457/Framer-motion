@@ -15,20 +15,16 @@ function NetflixCarousel({ title }) {
       const timer = setTimeout(() => {
         setIsResetting(true);
         setIndex(0);
-      }, 500);           
+      }, 500);
       return () => clearTimeout(timer);
     }
   }, [index, totalPages]);
 
-
   useEffect(() => {
     if (isResetting) {
-      
-       setIsResetting(false);
+      setIsResetting(false);
     }
   }, [isResetting]);
-
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,11 +59,13 @@ function NetflixCarousel({ title }) {
   const displayPage = index % totalPages;
 
   return (
-    <div className="">
+    <div className="space-y-1">
       <div className="flex items-center justify-between px-9">
-        <div className="text-[#FFFFFF] text-[1.2rem] font-medium">{title}</div>
+        <div className="text-[#FFFFFF] text-xs lg:text-[1.2rem] md:[text-1.rem]   sm:[.9rem] font-medium">
+          {title}
+        </div>
         <ul className="list-none flex gap-0.5">
-          {Array.from({ length: totalPages}).map((_, idx) => (
+          {Array.from({ length: totalPages }).map((_, idx) => (
             <li
               key={idx}
               className={`opacity-70 w-[12px] h-0.5 ${
@@ -98,14 +96,14 @@ function NetflixCarousel({ title }) {
           className={`flex  mx-1  `}
           style={{ width: `100%` }}
         >
-          {Array.from({ length: totalImages+imgPerPage }).map((_, idx) => {
+          {Array.from({ length: totalImages + imgPerPage }).map((_, idx) => {
             const realIdx = idx % totalImages;
             return (
               <img
                 style={{ width: `calc(100%/${imgPerPage})` }}
                 className="p-1 rounded-[8px]  aspect-video   shrink-0  grow-0  object-cover  "
                 key={idx}
-                src={`./img${realIdx+ 1}.png`}
+                src={`./img${realIdx + 1}.png`}
               />
             );
           })}
@@ -126,32 +124,13 @@ export default NetflixCarousel;
 
 function Arrow({ children, className, action, handleClick }) {
   return (
-    <div
+    <button
       onClick={() => handleClick(action)}
       className={` grow-0 shrink-0 text-[3rem] group  text-white p-1 flex justify-center items-center my-1 cursor-pointer bg-[rgba(20,20,20,0.25)] hover:bg-[rgba(20,20,20,0.5)]  z-10 ${className}`}
     >
       <div className="group-hover:scale-110  group-hover:opacity-100 opacity-0 transition">
         {children}
       </div>
-    </div>
+    </button>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

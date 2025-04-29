@@ -18,6 +18,9 @@ import ScrollSpy from './components/ScrollSpy/ScrollSpy'
 import Panigation from './components/panigation/Panigation'
 import Debouncing from './components/jsconcepts/Debouncing'
 import NetflixCarousel from './components/NetflixCarousel/NetflixCarousel'
+import Player from './components/YT-Player/Player'
+import OnScrollReveal from './components/onScrollRevel/OnScrollReveal'
+import SideBar from './components/Animated-Sidebar/SideBar'
 
 
 function App() {
@@ -52,12 +55,16 @@ function App() {
 
     {/* <Panigation /> */}
     {/* <Debouncing /> */}
-    <div className="bg-[rgba(20,20,20,0.80)] w-full min-h-screen h-fit flex flex-col gap-3 pt-5">
+    {/* <div className="bg-[rgba(20,20,20,0.80)] w-full min-h-screen h-fit flex flex-col gap-8 pt-5">
     <NetflixCarousel title={'Action thriller'} />
     <NetflixCarousel title={'Critically Acclaimed TV Shows'} />
     <NetflixCarousel title={'Comedies'} />
     <NetflixCarousel title={'US TV Shows'} />
-    </div>
+    </div> */}
+
+    {/* <Player /> */}
+    {/* <OnScrollReveal /> */}
+    <SideBar />
     </>
 
   )
