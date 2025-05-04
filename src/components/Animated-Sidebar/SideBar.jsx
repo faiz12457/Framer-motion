@@ -22,6 +22,9 @@ function SideBar() {
   return (
     <motion.div
       layout
+    
+
+      
       className={`border-r relative border-slate-300 h-screen ${
         open ? "w-[225px]" : "w-fit"
       }  bg-white shrink-0 p-2`}
@@ -181,7 +184,7 @@ function ToogleClose({ open, setIsOpen }) {
       <div className="flex items-center p-2">
         <motion.div
           layout
-          className="grid size-10 text-lg place-content-center"
+          className="grid size-10 text-lg  place-content-center"
         >
           <FiChevronsRight
             className={`transition-transform ${open && "rotate-180"}`}
@@ -203,3 +206,16 @@ function ToogleClose({ open, setIsOpen }) {
     </motion.button>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

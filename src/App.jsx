@@ -21,6 +21,7 @@ import NetflixCarousel from './components/NetflixCarousel/NetflixCarousel'
 import Player from './components/YT-Player/Player'
 import OnScrollReveal from './components/onScrollRevel/OnScrollReveal'
 import SideBar from './components/Animated-Sidebar/SideBar'
+import UploadFile from './components/UploadFile/UploadFile'
 
 
 function App() {
@@ -64,7 +65,8 @@ function App() {
 
     {/* <Player /> */}
     {/* <OnScrollReveal /> */}
-    <SideBar />
+    {/* <SideBar /> */}
+    <UploadFile />
     </>
 
   )
