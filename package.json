@@ -17,6 +17,7 @@
     "lenis": "^1.2.3",
     "motion": "^12.4.3",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",

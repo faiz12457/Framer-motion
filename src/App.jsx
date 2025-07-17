@@ -22,6 +22,17 @@ import Player from './components/YT-Player/Player'
 import OnScrollReveal from './components/onScrollRevel/OnScrollReveal'
 import SideBar from './components/Animated-Sidebar/SideBar'
 import UploadFile from './components/UploadFile/UploadFile'
+import Todo, { Todos } from './components/ComplexExitAnimation/Todo'
+import Grid from './components/ModernGridLayout/Grid'
+import InternButton from './components/WEBUICLONE/InternButton'
+import NavBar from './components/WEBUICLONE/NavBar'
+import HeroSection from './components/WEBUICLONE/HeroSection'
+import Parent from './components/WEBUICLONE/Parent'
+import CountUp from './components/WEBUICLONE/MotionCounter'
+import CounterSec from './components/WEBUICLONE/CounterSec'
+import OurIntershipsSec from './components/WEBUICLONE/OurIntershipsSec'
+import InternshipJourneySec from './components/WEBUICLONE/InternshipJourneySec'
+import UI from './components/WEBUICLONE/UI'
 
 
 function App() {
@@ -66,8 +77,17 @@ function App() {
     {/* <Player /> */}
     {/* <OnScrollReveal /> */}
     {/* <SideBar /> */}
-    <UploadFile />
-    </>
+    {/* <UploadFile /> */}
+    {/* <Todos /> */}
+    {/* <Grid /> */}
+
+
+ <UI />
+  
+
+
+
+     </>
 
   )
 }

@@ -93,7 +93,7 @@ function Option({ Icon, title, open, selected, setSelected }) {
     <motion.button
       layout
       onClick={() => setSelected(title)}
-      className={`relative flex h-10 w-full  items-center rounded-md  transition-colors
+      className={`relative flex h-10 w-full   items-center rounded-md  transition-colors
           ${
             selected === title
               ? "bg-indigo-100 text-indigo-800"

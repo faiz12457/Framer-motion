@@ -13,7 +13,7 @@ function DropDown() {
 export default DropDown
 
 
-function FlyoutLink({children,href,FlyoutContent}){
+function FlyoutLink({children,href,FlyoutContent=null}){
     const [open,setOpen]=useState(false);
 
  const showFlyout=open&&FlyoutContent

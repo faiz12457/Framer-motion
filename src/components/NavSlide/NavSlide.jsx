@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react'
 import { motion } from "framer-motion";
+import NavSlidePractise from '../practiseToBackOnTrack/NavSlidePractise';
 
 function NavSlide() {
   return (
-    <div className='bg-neutral-100 grid place-content-center h-screen w-full'>
+    <div className='bg-neutral-100 grid place-content-center  h-screen w-full'>
+    <NavSlidePractise />
         <SlideButtons />
     </div>
   )

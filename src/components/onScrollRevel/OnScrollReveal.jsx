@@ -75,7 +75,7 @@ function Reveal({children}){
        animate={slideControls}
     transition={{duration:0.5,ease:'easeInOut'}}
         
-         className='bg-green-500 absolute z-50 left-0 right-0 top-1 bottom-1'>
+         className='bg-green-500 absolute z-50   left-0 right-0 top-1 bottom-1'>
 
 </motion.div>
        
