@@ -5,6 +5,7 @@ import CounterSec from "./CounterSec";
 import OurIntershipsSec from "./OurIntershipsSec";
 import InternshipJourneySec from "./InternshipJourneySec";
 import BlurCircle from "./BlurCircle";
+import SuccessStories from "./SuccessStories";
 
 function UI() {
   return (
@@ -18,6 +19,7 @@ function UI() {
         <CounterSec />
         <OurIntershipsSec />
         <InternshipJourneySec />
+        <SuccessStories />
       </div>
     
   );

@@ -12,7 +12,7 @@ function NavBar() {
     { title: "Support" },
   ];
   return (
-    <div className="w-full h-20 fixed top-0 z-20 bg-[#070707] flex justify-between  px-6">
+    <div className="w-full h-20 fixed top-0 z-50 bg-[#070707] flex justify-between  px-6">
       <div className="flex gap-2 items-center w-fit h-full">
         <img src="/Logo.png" className="h-14 w-10" />
         <div className=" h-full flex flex-col justify-end">
