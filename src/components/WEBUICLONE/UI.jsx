@@ -6,11 +6,12 @@ import OurIntershipsSec from "./OurIntershipsSec";
 import InternshipJourneySec from "./InternshipJourneySec";
 import BlurCircle from "./BlurCircle";
 import SuccessStories from "./SuccessStories";
+import AboutUs from "./AboutUs";
+import WhyUSsEC from "./WhyUSsEC";
 
 function UI() {
   return (
     <div className="relative w-full">
-      {/* This wrapper ensures layout is based on content */}
       {/* <BlurCircle  top={300} radius={450} position="left"  /> */}
       {/* <BlurCircle  top={300} radius={450} position="right"  /> */}
     
@@ -20,6 +21,8 @@ function UI() {
         <OurIntershipsSec />
         <InternshipJourneySec />
         <SuccessStories />
+        <AboutUs />
+        <WhyUSsEC />
       </div>
     
   );

@@ -14,7 +14,7 @@ function OurIntershipsSec() {
           <InternshipCard index={i} key={i} />
         ))}
       </div>
-      <div className=" mt-14 flex justify-center">
+      <div className=" mt-14 pb-2.5 flex justify-center">
         <InternButton
           animationTextColor={"#27C5D9"}
           primaryTextColor={"black"}
